@@ -2,7 +2,7 @@ function convertToMonthlyReturnRate(yearlyReturnRate) {
   return yearlyReturnRate ** (1 / 12);
 }
 
-function generateReturnsArray(
+export function generateReturnsArray(
   startingAmount = 0,
   timeHorizon = 0,
   timePeriod = 'monthly',
@@ -48,7 +48,7 @@ function generateReturnsArray(
     returnsArray.push({
       investedAmount,
       interestReturns,
-      totalInvestmentReturns,
+      totalInterestReturns,
       month: timeReference,
       totalAmount,
     });
