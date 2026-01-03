@@ -8,13 +8,16 @@
     <title>Calculadora Investimentos Impressionador</title>
   </head>
   <body class="h-dvh grid gap-4 grid-cols-3 grid-rows-2">
+    <!-- inicio do aisde -->
     <aside
       class="bg-emerald-300 row-span-2 flex flex-col justify-between py-5 px-2"
     >
       <h1 class="text-2xl font-bold px-6">Calculadora de investimentos</h1>
+
+      <!-- inicio do formulario -->
       <form id="investment-form" class="w-full">
         <!-- Investimento inicial -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="starting-amount" class="font-bold text-gray-700"
             >Investimento inicial</label
           >
@@ -35,8 +38,9 @@
             />
           </div>
         </div>
+
         <!-- Aportes adicionais -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="additional-contribution" class="font-bold text-gray-700"
             >Aportes adicionais</label
           >
@@ -56,8 +60,9 @@
             />
           </div>
         </div>
+
         <!-- Prazo -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="time-amount" class="font-bold text-gray-700">Prazo</label>
           <div class="flex">
             <input
@@ -80,7 +85,7 @@
         </div>
 
         <!-- Rentabilidade -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="return-rate" class="font-bold text-gray-700"
             >Rentabilidade</label
           >
@@ -109,8 +114,9 @@
             </select>
           </div>
         </div>
+
         <!-- Impostos sobre lucro -->
-        <div class="flex w-full flex-col px-6 my-2">
+        <div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
           <label for="tax-rate" class="font-bold text-gray-700"
             >Impostos sobre lucro</label
           >
@@ -132,6 +138,8 @@
           </div>
         </div>
       </form>
+
+      <!-- Botões Calular e Limpar -->
       <div class="flex h-12 px-6 my-8 w-full gap-2">
         <button
           id="calculate-results"
@@ -141,9 +149,13 @@
         >
           Calcular
         </button>
-        <button class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
+        <button id="clear-form" class="w-1/2 rounded-lg hover:bg-emerald-500">
+          Limpar
+        </button>
       </div>
     </aside>
+
+    <!-- inicio do main -->
     <main>
       <p>Resultados</p>
     </main>
